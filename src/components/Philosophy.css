@@ -1,0 +1,485 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .section {
+    padding: 50px 20px;
+    box-sizing: border-box; 
+  }
+  
+  .video-section {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .overlay h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .about-section {
+    background: url('https://twobrothersindiashop.com/cdn/shop/files/Desktop_Variation_2_2000x.png?v=1678950674') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Adjust the height as needed */
+    width: auto;
+  }
+  
+  .about-section .content {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    max-width: 800px; /* Ensure it doesn't overflow horizontally */
+    box-sizing: border-box;
+    text-align: center; /* Center the text horizontally */
+    font-size: 15px;
+    justify-content: center;
+  }
+  
+  .soil-section {
+    background: rgb(42, 67, 28);
+    display: flex;
+    justify-content: center; /* Centers the flex items horizontally */
+    align-items: center; /* Vertically centers the children within the parent */
+    text-align: left;
+    padding: 40px; /* Adjust according to your design needs */
+    color: #fff; /* Ensures text is white */
+    font-family: Arial, sans-serif; /* Assuming Arial is the desired font */
+    height: 100vh; /* Ensures the section takes the full viewport height */
+    box-sizing: border-box;
+  }
+  
+  .soil-section .content {
+    display: flex;
+    flex-direction: column; /* Aligns children (h2, p, button) in a column */
+    justify-content: center; /* Centers the text vertically */
+    align-items: flex-start; /* Aligns text to the start horizontally */
+    margin-right: 20px; /* Add some space between content and image */
+    order: 1; /* Ensure the content comes first in the flex layout */
+  }
+  
+  .soil-section  h2 {
+    font-size: 20px; /* Adjusted for larger heading size */
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: #d4af37; /* Gold color for the heading */
+  }
+  
+  .soil-section  p {
+    font-size: 15px; /* Adjusted for paragraph text size */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improves readability */
+    box-sizing: border-box !important;
+  }
+  
+  .soil-section button {
+    font-size: 1.2em; /* Adjusted for button text size */
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .soil-section img {
+    width: auto; /* Adjust based on your preference for image size */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 35%; /* Ensures image doesn't exceed 35% of the container width */
+    border-radius: 50%; /* Makes the image circular */
+    margin-left: 20px; /* Add some space between content and image */
+    order: 2; /* Ensure the image comes second in the flex layout */
+  }
+  
+  @keyframes swipeRightToLeft {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* End at normal position */
+      opacity: 1;
+    }
+  }
+  
+  .soil-section img {
+    animation: swipeRightToLeft 1s ease-out forwards;
+  }
+  
+  .cattle-rearing-section {
+    background: rgb(249, 237, 213);
+    display: flex;
+    justify-content: center; /* Centers the flex items horizontally */
+    align-items: center; /* Vertically centers the children within the parent */
+    text-align: left;
+    padding: 40px; /* Adjust according to your design needs */
+    color: rgb(42, 67, 28); /* Ensures text is white */
+    font-family: Arial, sans-serif; /* Assuming Arial is the desired font */
+    height: 100vh; /* Ensures the section takes the full viewport height */
+    box-sizing: border-box;
+  }
+  
+  .cattle-rearing-section .content {
+    display: flex;
+    flex-direction: column; /* Aligns children (h2, p, button) in a column */
+    justify-content: center; /* Centers the text vertically */
+    align-items: flex-start; /* Aligns text to the start horizontally */
+    margin-right: 20px; /* Add some space between content and image */
+    order: 1; /* Ensure the content comes first in the flex layout */
+  }
+  
+  .cattle-rearing-section h2 {
+    font-size: 20px; /* Adjusted for larger heading size */
+    font-weight: bold;
+    margin-bottom: 1px;
+    color:rgb(42, 67, 28); /* Gold color for the heading */
+  }
+  
+  .cattle-rearing-section p {
+    font-size: 15px; /* Adjusted for paragraph text size */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improves readability */
+    box-sizing: border-box !important;
+    color: rgb(42, 67, 28);
+  }
+  
+  .cattle-rearing-section button {
+    font-size: 1.2em; /* Adjusted for button text size */
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(42, 67, 28);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: rgb(42, 67, 28);
+  }
+  
+  .cattle-rearing-section img {
+    width: auto;
+    height: auto;
+    max-width: 35%;
+    border-radius: 50%;
+    margin-left: 20px;
+    order: 2;
+    overflow: hidden; /* Important for clipping */
+    animation: wipeRightToLeft 1s ease-out forwards;
+  }
+  
+  
+  @keyframes wipeRightToLeft {
+    from {
+      clip-path: inset(0 100% 0 0); /* Completely hides the image initially */
+    }
+    to {
+      clip-path: inset(0 0 0 0); /* Fully reveals the image */
+    }
+  }
+  
+  .healthy-planet-section {
+    display: flex;
+    justify-content: center; /* Centers the flex items horizontally */
+    align-items: center; /* Vertically centers the children within the parent */
+    text-align: left;
+    padding: 40px; /* Adjust according to your design needs */
+    background: rgb(255, 255, 255); /* Background color for the section */
+    color: rgb(42, 67, 28); /* Text color */
+    font-family: Arial, sans-serif; /* Assuming Arial is the desired font */
+    height: 100vh; /* Ensures the section takes the full viewport height */
+    box-sizing: border-box;
+  }
+  
+  .healthy-planet-section .content {
+    display: flex;
+    flex-direction: column; /* Aligns children (h2, p, button) in a column */
+    justify-content: center; /* Centers the text vertically */
+    align-items: flex-start; /* Aligns text to the start horizontally */
+    margin-left: 0; /* No margin between content and image */
+  }
+  
+  .healthy-planet-section h2 {
+    font-size: 20px; /* Adjusted for larger heading size */
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: rgb(42, 67, 28); /* Text color */
+  }
+  
+  .healthy-planet-section p {
+    font-size: 15px; /* Adjusted for paragraph text size */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improves readability */
+    box-sizing: border-box !important;
+  }
+  
+  .healthy-planet-section button {
+    font-size: 1.2em; /* Adjusted for button text size */
+    background-color: rgb(42, 67, 28);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .healthy-planet-section img {
+    height: 500px;
+    width: 500px;
+    border-radius: 44% 75% 45% 55% / 51% 45% 60% 60%;
+    margin-right: 80px; /* No margin between image and content */
+     /* Ensure the image comes first in the flex layout */
+  }
+  
+  .content {
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .create-section {
+    display: flex;
+    justify-content: center; /* Centers the flex items horizontally */
+    align-items: center; /* Vertically centers the children within the parent */
+    text-align: left;
+    padding: 40px; /* Adjust according to your design needs */
+    background: rgb(255, 255, 255); /* Background color for the section */
+    color: rgb(42, 67, 28); /* Text color */
+    font-family: Arial, sans-serif; /* Assuming Arial is the desired font */
+    height: 100vh; /* Ensures the section takes the full viewport height */
+    box-sizing: border-box;
+  }
+  
+  .create-section .content {
+    display: flex;
+    flex-direction: column; /* Aligns children (h2, p, button) in a column */
+    justify-content: center; /* Centers the text vertically */
+    align-items: flex-start; /* Aligns text to the start horizontally */
+    margin-left: 0; /* No margin between content and image */
+  }
+  
+  .create-section h2 {
+    font-size: 20px; /* Adjusted for larger heading size */
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: rgb(42, 67, 28); /* Text color */
+  }
+  
+  .create-section p {
+    font-size: 15px; /* Adjusted for paragraph text size */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improves readability */
+    box-sizing: border-box !important;
+  }
+  
+  .create-section button {
+    font-size: 1.2em; /* Adjusted for button text size */
+    background-color: rgb(42, 67, 28);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .create-section img {
+    height: 500px;
+    width: 500px;
+    border-radius: 44% 75% 45% 55% / 51% 45% 60% 60%;
+    margin-right: 80px; /* No margin between image and content */
+     /* Ensure the image comes first in the flex layout */
+  }
+  
+  .impact-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: #8B0000;
+    color: white;
+    padding: 20px 20px 0; /* Remove padding-bottom */
+    box-sizing: border-box;
+    position: relative; /* Add relative positioning to the parent */
+  }
+  
+  .section-heading {
+    position: absolute; /* Position the heading absolutely */
+    top: 10px; /* Align the heading to the top */
+    left: 50%; /* Move the heading to the center horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
+    margin-top: 5px; 
+    margin-bottom: 10px;/* Remove default margin */
+    color: white;
+  }
+  
+  .impact-section .card {
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  
+  
+  .impact-section .card img {
+    width: 100%;
+    border-radius: 10px;
+    animation: swipeUp 1.0s ease-out forwards;
+  }
+  
+  .impact-section button{
+    color: black;
+    font-weight: bold;
+  }
+  
+  
+  @keyframes swipeUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  .last-image-section {
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .last-image-section img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+  
+  
+  /* Responsive styles for mobile view */
+  @media (max-width: 768px) {
+  
+    .video-section {
+      height: 400px; /* Adjust height for smaller screens */
+    }
+  
+    .overlay h1 {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  
+    .soil-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto; /* Adjust for smaller screens */
+        padding: 20px;
+        text-align: center; /* Center text for mobile view */
+    }
+    
+    .soil-section .content {
+        width: 100%;
+        max-width: none; /* Removes max-width restriction for smaller screens */
+        padding: 10px 0; /* Removes horizontal padding for smaller screens */
+        text-align: center; /* Center the text horizontally for smaller screens */
+         /* Ensure the content comes second in the flex layout on mobile */
+        align-items: center; /* Center the text horizontally */
+    }
+    
+    .soil-section img {
+        width: 80%;
+        max-width: none;
+        margin: 20px auto 0; /* Center the image and add top margin */
+        order: 1; /* Ensure the image comes first in the flex layout on mobile */
+    }
+    
+    .healthy-planet-section, .cattle-rearing-section, .create-section {
+      flex-direction: column;
+      justify-content: center;
+      height: auto; /* Adjust for smaller screens */
+      padding: 20px;
+    }
+  
+    .healthy-planet-section .content, .cattle-rearing-section .content, .create-section .content {
+      width: 100%;
+      max-width: none; /* Removes max-width restriction for smaller screens */
+      padding: 10px 0; /* Removes horizontal padding for smaller screens */
+    }
+  
+    .healthy-planet-section img, .cattle-rearing-section img, .create-section img {
+      width: 50%;
+      max-width: none;
+      margin: 0 auto;
+      margin-top: 20px; /* Adds space between content and image on smaller screens */
+      height: auto;
+    }
+   
+    .content {
+      padding: 0;
+      text-align: center;
+    }
+  
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .impact-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .impact-section .card {
+      width: 90%;
+      
+    }
+  
+    
+  }
+  
